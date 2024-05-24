@@ -31,6 +31,9 @@ p {
 .secondary-text {
     color: var(--secondary);
 }
+.third-text{
+    color:#5A7AF9;
+}
 
 .button {
     background: var(--primary);
@@ -53,8 +56,13 @@ p {
     line-height: 80px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: var(--primary);
+    font-weight: 700;
 }
-
+.third-title{
+    font-size: 54px;
+    line-height: 60px;
+    color: var(--primary);
+}
 
 
 
@@ -156,7 +164,7 @@ p {
 
 /* improve writing start ------ */
 .improve-writing {
-    padding: 50px 0;
+    padding: 50px 5px;
 }
 
 .improve-writing-content {
@@ -216,19 +224,155 @@ p {
     font-size: 18px;
 }
 
+/* email start ------ */
+.email{
+    padding: 50px 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.email>div{
+    width: 45%;
+    padding: 10px;
+}
+.email>div>p{
+    padding: 20px 0;
+}
+.email>div>img{
+    width: 100%;
+}
+
+/* rewrite start -------- */
+.rewrite{
+    padding: 50px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.rewrite>div{
+    width: 45%;
+    padding: 10px;
+}
+.rewrite>div>p{
+    padding: 20px 0;
+}
+.rewrite>div>img{
+    width: 100%;
+}
 
 
+/* tools start ------- */
+.tools{
+    padding: 50px 5px;
+}
+.tools-head{
+    text-align: center;
+}
+.tools-head>p{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.tools-items{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.tool-card{
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.tool-card>div{
+    width: 45%;
+    
+}
+.tool-card>div>img{
+    width: 100%;
+}
+.tool-card>div>h3{
+    font-size: 50px;
+}
+.tool-card>div>p{
+    padding: 20px 0;
+}
 
+.tool-item-1{
+    background: #F8F1FC;
+}
+.tool-item-1>div>h3{
+    color: #B97FE6;
+}
+.tool-item-2{
+    background: #FAEAE6;
+}
+.tool-item-2>div>h3{
+    color: #EBA999;
+}
+.tool-item-3{
+    background: #E5EFFF;
+}
+.tool-item-3>div>h3{
+    color: #7AADFF;
+}
+
+
+/* enhance-tools start */
+.enhance-tools{
+    padding: 50px 5px;
+}
+.enhance-tool-title>p{
+    padding: 20px 0;
+}
+.enhance-tools-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+}
+.enhance-tools-content>.item{
+    width: 30%;
+    max-width: 370px;
+}
+.enhance-tools-content>.item>p{
+    font-size: 18px;
+}
+.enhance-tools-content>.item>h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+    padding: 16px 0;
+}
+.enhance-tools-content>.item>.image{
+    height: 60px;
+    width: 60px;
+}
+.enhance-tools-content>.item>.image>img{
+    width: 100%;
+}
+
+
+/* -----------------------tablet---------------- */
 @media screen and (max-width: 767px) {
     p {
         font-size: 20px;
     }
 
     .sub-title {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 45px;
+        line-height: 55px;
     }
-
+    .third-title{
+        font-size: 40px;
+        line-height: 45px;
+    }
     .main-title {
         font-size: 65px;
         line-height: 70px;
@@ -266,6 +410,17 @@ p {
         width: 48%;
     }
 
+    .email>div{
+        width: 50%;
+    }
+    .rewrite>div{
+        width: 50%;
+    }
+
+    .enhance-tools-content>.item{
+        width: 48%;
+        max-width: 370px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -275,9 +430,12 @@ p {
 
     .sub-title {
         font-size: 40px;
-        line-height: 60px;
+        line-height: 50px;
     }
-
+    .third-title{
+        font-size: 36px;
+        line-height: 42px;
+    }
     .main-title {
         font-size: 55px;
         line-height: 60px;
@@ -304,5 +462,32 @@ p {
 
     .improve-writing-item>.item {
         min-width: 100%;
+    }
+
+    .email{
+        flex-direction: column;
+    }
+    .email>div{
+        width: 100%;
+    }
+    .rewrite{
+        flex-direction: column;
+    }
+    .rewrite>div{
+        width: 100%;
+    }
+
+    .tool-card{
+        padding: 40px 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tool-card>div{
+        width: 100%; 
+    }
+
+    .enhance-tools-content>.item{
+        width: 100%;
+        max-width:100% ;
     }
 }
