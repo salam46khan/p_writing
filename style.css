@@ -546,9 +546,58 @@ marquee {
 
 /* faq start -------- */
 .faq{
-
+    padding: 50px 5px;
 }
-
+.faq>h2{
+    text-align: center;
+}
+.faq-content{
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    
+}
+.faq-box{
+    position: relative;
+    border-bottom: 1px solid var(--primary);
+    margin: 10px 0;
+}
+.faq-box>.level{
+    position: relative;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.faq-box>.level::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    font-size: 28px;
+    color: var(--primary);
+}
+.faq-box.active>.level::before{
+    content: '-';
+}
+.faq-box>.level>h4{
+    font-size: 28px;
+    color: var(--primary);
+}
+.faq-box>.content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.faq-box>.content>p{
+    font-size: 18px;
+    color: var(--primary);
+}
+.faq-box.active>.content{
+    height: 120px;
+    overflow: hidden;
+}
 
 /* ai start  -----------*/
 .ai{
@@ -718,6 +767,7 @@ footer{
         box-shadow: 0px 0px 30px #0001;
         z-index: 1;
         overflow: hidden;
+        transition: all 0.4s;
     }
     .nav-icons>.fa-solid{
         font-size: 30px;
@@ -739,6 +789,10 @@ footer{
         overflow: hidden;
     }
 
+    #login-btns{
+        transition: all 0.4s;
+    }
+    
     .banner-text {
         max-width: 500px;
     }
@@ -804,6 +858,11 @@ footer{
     .ai-content>div{
         width: 90%;
         margin: 0 auto;
+    }
+
+    .faq-box.active>.content{
+        height: 140px;
+        overflow: hidden;
     }
 
     footer{
@@ -894,5 +953,10 @@ footer{
     .ai-content>div{
         width: 100%;
         margin: 0 auto;
+    }
+
+    .faq-box.active>.content{
+        height: 160px;
+        overflow: hidden;
     }
 }
