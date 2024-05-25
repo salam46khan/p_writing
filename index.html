@@ -13,14 +13,33 @@
 
 <body>
     <!-- navbar start here  -->
-    <nav>
-        <p class="color">nav bar</p>
-    </nav>
+    <div class="container">
+        <nav>
+            <div class="navbar container">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <ul id="nav-list">
+                    <li><a href="/">Features</a></li>
+                    <li><a href="/">Benefits</a></li>
+                    <li><a href="/">How it works</a></li>
+                    <li><a href="/">Pricing</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="login-btns" id="login-btns">
+                        <button class="link-btn">Login</button>
+                        <button class="button">Try it free</button>
+                    </div>
+                    <i onclick="toggleLogin()" class="fa-solid fa-user"></i>
+                    <i onclick="toggleMenu()" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- banner start here  -->
-    <div class="container">
-        <div class="banner">
-            <!-- <img class="banner-bg-img" src="./image/banner2.png" alt=""> -->
+    <div class="banner">
+        <div class="container">
             <div class="banner-content">
                 <div>
                     <h1 class="main-title">
@@ -254,7 +273,7 @@
         </div>
     </div>
 
-    <!-- enhance tools  -->
+    <!-- enhance tools start -->
     <div class="container">
         <div class="enhance-tools">
             <div class="enhance-tool-title">
@@ -312,7 +331,575 @@
         </div>
     </div>
 
-    <!-- more power  -->
+    <!-- more power start -->
+    <div class="container">
+        <div class="more-power">
+            <div class="power-title">
+                <h2 class="sub-title">
+                    More power to everything
+                    you <span class="secondary-text">write.</span>
+                </h2>
+                <p>
+                    Save hours every day. The world's first AI writer that works across your Mac, iPhone, and iPad.
+                </p>
+            </div>
+            <div class="power-items">
+                <div class="card">
+                    <div class="image">
+                        <img src="./image/emails.png" alt="">
+                    </div>
+                    <h4>Emails</h4>
+                    <p>
+                        AI creates clear and concise emails, saving time and improving communication.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./image/Spelling.png" alt="">
+                    </div>
+                    <h4>Spelling & Grammar</h4>
+                    <p>
+                        AI corrects spelling and grammar errors, enhancing overall content quality.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./image/blog.png" alt="">
+                    </div>
+                    <h4>Blogs</h4>
+                    <p>
+                        AI generates engaging blog posts quickly and efficiently.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- user start -->
+    <div class="user">
+        <div class="container user-title">
+            <h2 class="sub-title">
+                Trusted by over <span class="secondary-text">1M+ users</span>
+            </h2>
+        </div>
+        <div class="user-content">
+            <marquee direction="right" class="marquee">
+                <div class="marquee-content">
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user1.png" alt="">
+                                <div>
+                                    <h4>Leslie Alexander</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user-2.png" alt="">
+                                <div>
+                                    <h4>Jenny Wilson</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            As someone who struggles with writer's block, I was amazed at how quickly a personal AI
+                            writing tool helped me get unstuck. With just a few prompts, I was able to generate ideas
+                            and start writing.
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user4.png" alt="">
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user3.png" alt="">
+                                <div>
+                                    <h4>Albert Floresr</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user1.png" alt="">
+                                <div>
+                                    <h4>Leslie Alexander</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user-2.png" alt="">
+                                <div>
+                                    <h4>Jenny Wilson</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            As someone who struggles with writer's block, I was amazed at how quickly a personal AI
+                            writing tool helped me get unstuck. With just a few prompts, I was able to generate ideas
+                            and start writing.
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user4.png" alt="">
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user3.png" alt="">
+                                <div>
+                                    <h4>Albert Floresr</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user5.png" alt="">
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user3.png" alt="">
+                                <div>
+                                    <h4>Albert Floresr</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+
+                </div>
+            </marquee>
+            <marquee direction="left">
+                <div class="marquee-content">
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user1.png" alt="">
+                                <div>
+                                    <h4>Leslie Alexander</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user1.png" alt="">
+                                <div>
+                                    <h4>Leslie Alexander</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user4.png" alt="">
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user3.png" alt="">
+                                <div>
+                                    <h4>Albert Floresr</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user1.png" alt="">
+                                <div>
+                                    <h4>Leslie Alexander</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user-2.png" alt="">
+                                <div>
+                                    <h4>Jenny Wilson</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            As someone who struggles with writer's block, I was amazed at how quickly a personal AI
+                            writing tool helped me get unstuck. With just a few prompts, I was able to generate ideas
+                            and start writing.
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user4.png" alt="">
+                                <div>
+                                    <h4>Robert Fox</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <div class="name">
+                                <img src="./image/user3.png" alt="">
+                                <div>
+                                    <h4>Albert Floresr</h4>
+                                    <p>UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <p class="review">
+                            I was skeptical at first, but after using a personal AI writing tool, I was blown away by
+                            how
+                            much it helped me improve my writing. The tool made suggestions on grammar and syntax that I
+                            never would have thought of myself. I highly recommend it..
+                        </p>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </div>
+
+    <!-- faq start  -->
+    <div class="container">
+        <div class="faq">
+            <p>faq</p>
+        </div>
+    </div>
+
+    <!-- ai start  -->
+    <div class="container">
+        <div class="ai">
+            <div class="ai-content">
+                <div>
+                    <h2 class="sub-title">
+                        Experience the power of fast writing with AI
+                    </h2>
+                    <div>
+                        <form class="ai-input-box">
+                            <input type="text" placeholder="Enter Email Address">
+                            <button>Get Started</button>
+                        </form>
+                    </div>
+                    <div class="feature">
+                        <div>
+                            <img src="./image/badge.png" alt="">
+                            <p>10 Days Free Trial</p>
+                        </div>
+                        <div>
+                            <img src="./image/badge.png" alt="">
+                            <p>No Credit card needed</p>
+                        </div>
+                        <div>
+                            <img src="./image/badge.png" alt="">
+                            <p>Cancel anytime</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- social media link  -->
+    <div class="container">
+        <div class="media">
+            <div class="media-link">
+                <div>
+                    <div>
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <i class="fa-brands fa-blogger"></i>
+                        <p>Community</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="media-link">
+                <div>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <p>Linkedin</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <i class="fa-brands fa-blogger"></i>
+                        <p>Articles</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="media-link">
+                <div>
+                    <div>
+                        <i class="fa-brands fa-slack"></i>
+                        <p>Slack</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start  -->
+    <footer class="container">
+        <div class="footer-content">
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/">About us</a></li>
+                    <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/">Careers</a></li>
+                    <li><a href="/">Press</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="/">Project management</a></li>
+                    <li><a href="/">Startups</a></li>
+                    <li><a href="/">Marketing</a></li>
+                    <li><a href="/">Educators</a></li>
+                    <li><a href="/">Knowledge management</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div>
+                <h4>Try Pwrite</h4>
+                <ul>
+                    <li><a href="/">Packs</a></li>
+                    <li><a href="/">API</a></li>
+                    <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Request a demo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/">Help center</a></li>
+                    <li><a href="/">Contact support</a></li>
+                    <li><a href="/">Community</a></li>
+                    <li><a href="/">Android app</a></li>
+                    <li><a href="/">iOS app</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <div class="copy">
+            <img src="./image/logo.png" alt="">
+            <p>&copy;Copyright 2023</p>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Cookie Decliation</a>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 
 </html>
