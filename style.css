@@ -25,7 +25,6 @@ p {
     max-width: 1400px;
     padding: 0 5px;
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 .secondary-text {
@@ -696,7 +695,12 @@ footer{
 .footer-content{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+.footer-content>div{
+    width: 25%;
 }
 .footer-content>div>h4{
     color: #20231E;
@@ -734,7 +738,7 @@ footer{
 
 
 /* -----------------------tablet---------------- */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
     p {
         font-size: 20px;
     }
@@ -867,10 +871,10 @@ footer{
 
     footer{
         flex-direction: column;
-        gap: 20px;
+        column-gap: 20px;
     }
-    .footer-content{
-        width: 100%;
+    .footer-content>div{
+        width: 50%;
     }
 }
 
